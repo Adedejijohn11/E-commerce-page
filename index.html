@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-commerce</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="nav">
+      <div class="nav-links">
+        <a href="/">FREE UK RETURNS</a>
+        <a href="/">FREE P&P OVER ORDERS ABOVE $70</a>
+        <a href="/">ESTABLISHED 1983</a>
+      </div>
+      <div id="cart-icon">
+        <i class="ri-shopping-bag-line"></i>
+        <span class="cart-item-count"></span>
+      </div>
+    </nav>
+
+    <!-- cart-section -->
+    <div class="cart">
+      <h2 class="cart-title">Your Cart</h2>
+      <div class="cart-content">
+        <!-- i comment out the cart-box and create innHTML for it in javascript -->
+        <!-- <div class="cart-box">
+          <img src="images/shirt-1.jpg" alt="shirt" />
+          <div class="cart-detail">
+            <h2 class="cart-product-title">Classic Fit Shirts</h2>
+            <span class="cart-price">$100</span>
+            <div class="cart-quantity">
+              <button id="decrement">-</button>
+              <span class="number">1</span>
+              <button id="increment">+</button>
+            </div>
+          </div>
+          <i class="ri-delete-bin-line cart-remove"></i>
+        </div> -->
+      </div>
+      <div class="total">
+        <div class="total-title">Total</div>
+        <div class="total-price">$0</div>
+      </div>
+      <button class="btn-buy">Buy Now</button>
+      <i class="ri-close-line" id="cart-close"></i>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <h1>Men's Shirts</h1>
+        <button class="btn-1 button" type="button">ANY 3 FOR $80</button>
+        <button class="btn-2 button" type="button">SHOP NOW</button>
+      </div>
+      <div class="photo"></div>
+    </header>
+
+    <!-- Main-Section block -1-->
+    <section class="container-1">
+      <div class="title-and-description">
+        <h1>MEN'S FORMAL SHIRTS</h1>
+        <p>
+          Sharp shirts for formal occasions, shop by color, fit, collar style.
+        </p>
+      </div>
+      <h2>SHOP BY FIT</h2>
+      <div class="grid-cards">
+        <div class="card-1 cards">
+          <div class="product-items">
+            <img
+              src="images/Longsleeve-1.jpg"
+              class="product-pics-1"
+              alt="shirt-1"
+            />
+            <p class="fit-title">SHOP BY FIT</p>
+            <h1 class="product-title">Classic Fit Shirts</h1>
+            <span class="price-tag">$50</span>
+            <p class="description">
+              Stay comfortable and stylish year-round with this classic long
+              sleeve crewneck shirt. Made from 100% soft, breathable cotton, it
+              features a clean silhouette with a ribbed neckline and cuffs for a
+              secure fit
+            </p>
+            <button class="add-cart">Add to cart</button>
+          </div>
+        </div>
+        <div class="card-2 cards">
+          <div class="product-items">
+            <img
+              src="images/longsleeve-2.jpg"
+              class="product-pics-2"
+              alt="shirt-2"
+            />
+            <p class="fit-title">SHOP BY FIT</p>
+            <h1 class="product-title">Slim Fit Shirts</h1>
+            <span class="price-tag">$30</span>
+            <p class="description">
+              Stay comfortable and stylish year-round with this classic long
+              sleeve crewneck shirt. Made from 100% soft, breathable cotton, it
+              features a clean silhouette with a ribbed neckline and cuffs for a
+              secure fit
+            </p>
+            <button class="add-cart">Add to cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Shop-By-Color block-2 -->
+    <section class="container-2">
+      <h1 class="shopColor-title">SHOP BY COLOR</h1>
+      <section class="item-container">
+        <div class="product-items">
+          <img src="images/shirt-1.jpg" class="product-img-1" alt="short-1" />
+          <h1 class="product-title">Cartoon Color</h1>
+          <span class="price-tag">$28</span>
+          <button class="add-cart">Add to cart</button>
+        </div>
+        <div class="product-items">
+          <img src="images/shirt-4.jpg" class="product-img-2" alt="short-2" />
+          <h1 class="product-title">Beig Stripes Color</h1>
+          <span class="price-tag">$25</span>
+          <button class="add-cart">Add to cart</button>
+        </div>
+        <div class="product-items">
+          <img src="images/shirt-5.jpg" class="product-img-3" alt="short-3" />
+          <h1 class="product-title">Blue Stripes Color</h1>
+          <span class="price-tag">$20</span>
+          <button class="add-cart">Add to cart</button>
+        </div>
+      </section>
+    </section>
+
+    <!-- Footer -->
+    <footer>E.commerce@copyright 2025</footer>
+
+    <!-- javaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
