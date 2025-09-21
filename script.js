@@ -4,15 +4,10 @@ const cartClose = document.querySelector("#cart-close");
 const body = document.querySelector("body");
 
 cartIcon.addEventListener("click", () => {
-  scrollPosition = window.scrollY;
-
   cart.classList.add("active");
-  body.style.position = "fixed";
-  body.style.top = `-${scrollPosition}px`;
   body.style.left = "0";
-  body.style.right = "0";
-  body.style.overflow = "hidden";
 });
+
 cartClose.addEventListener("click", () => {
   cart.classList.remove("active");
   body.style.position = "";
@@ -20,8 +15,6 @@ cartClose.addEventListener("click", () => {
   body.style.left = "";
   body.style.right = "";
   body.style.overflow = "";
-
-  window.scrollTo(0, scrollPosition);
 });
 
 const addCartButtons = document.querySelectorAll(".add-cart");
